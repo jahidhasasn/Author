@@ -1,0 +1,452 @@
+/* ============== */
+/* Basic setup */
+/* =============== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    
+}
+ul li{
+    list-style-type:none; ;
+}
+
+/* ============== */
+/* HEADING */
+/* =============== */
+h1{
+    font-size: 6.2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10rem;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+/* Pragraph */
+.little-description{
+    font-size:1.8rem;
+    line-height: 3rem;
+    width: 60%;
+    margin-left: 20%;
+    color: #fff;
+}
+     
+/* ============== */
+/* Reuseable Component */
+/* =============== */
+
+
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section{
+    padding: 4rem 0;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .05rem;
+    color: #fff;
+    text-align: center;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h4{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: #fff;
+}
+/* button */
+
+.btn,
+.btn:link,
+.btn:visited
+{
+    background: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    color: #fff;
+    margin-top: 4.5rem; 
+    font-size: 2rem;
+}
+
+
+/* ============== */
+/* Header Section*/
+/* =============== */
+
+header{
+    background:#fff;
+    height: 10vh;
+}
+.logo{
+    height: 3rem;
+    margin-top: 2rem;
+    float: left;
+    width: auto;
+}
+
+
+
+/* Nav SECTION*/
+
+.main-nav{
+    float: right;
+    margin-bottom: .05rem;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.main-nav li:first-child {
+    margin-left: 0;
+}
+.main-nav li:first-child :hover{
+    border-bottom: 0;
+}
+.main-nav li a{
+    color: #484c55;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2.5rem .8rem;
+    border-radius: .3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    
+} 
+.main-nav li a:hover{
+    background: #f8f9fb; 
+    transition: .30s;
+    border-bottom: .3rem solid #49cbcd ;
+}
+.active{
+    background: #f8f9fb;
+    border-radius: .3rem;
+    border-bottom: .3rem solid #49cbcd ;
+}
+ /* ============== */
+ /* Banner Section*/
+ /* =============== */
+ .banner-section{
+     text-align: center;
+    background:url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 55rem;
+ }
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background:transparent ;
+    border:.4rem solid#fff ;
+    border-radius: .5rem;
+}
+
+ /* ============== */
+ /* Services Section*/
+ /* =============== */
+.services-section{
+    text-align: center;
+    margin-top: 0rem;
+}
+.services-section .service-img{
+    height: 40%;
+    width: 40%;
+    margin-bottom: 3rem;
+}
+.services-section h2{
+    color: #4e525d;
+    font-size: 2.2rem;
+    letter-spacing: normal;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.services-section .little-description{
+    color: #4e525d;
+    width: 100%;
+    margin-left: 0;
+    margin-top:  2rem; ;
+}
+.services-section .btn-services{
+   background: #49cbcd; 
+   border: 0;
+   font-size: 1.4rem;
+   padding: 1rem 1.3rem;
+   border-radius: .3rem;
+   margin-top: 1rem;
+}
+
+/* ============== */
+/* Portfolio  Section*/
+/* =============== */
+.portfolio-section{
+    text-align: center;
+    background: #f1f1f1;
+}
+.portfolio-section h2{
+    color: #4e525d;
+    font-size: 4.2rem;
+}
+.portfolio-section .col:nth-child(4){
+    margin-left: 0;
+}
+.portfolio-section .portfolio-img{
+    width: 100%;
+    height: 30rem;
+    margin: -.4rem 0;
+    border-radius: .3rem;
+}
+
+.portfolio-section .btn-prt{
+    background: #49cbcd;
+    border: 0;
+    font-weight: 300;
+    font-size: 2.4rem;
+    border-radius: .3rem;
+    padding: 1.5rem 3rem;
+}
+
+/* ============== */
+/* Team Section*/
+/* =============== */
+.team-secction{
+    text-align: center;
+}
+.team-secction h2{
+    color: #3c4761;
+}
+.team-secction h2::after{
+    background: #c8d9e5;
+}
+.team-member{
+    margin-top: .5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.team-member h3{
+    color: #27283d;
+}
+.role{
+    color: #48c1e9;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.team-secction p{
+    color: #535e75;
+    line-height: 1.5;
+}
+/* ============== */
+/* plan Section*/
+/* =============== */
+
+.plan-section{
+    text-align: center;
+    background: #f1f1f1;
+    color: #8c9299;
+    padding: 10rem 0;
+}
+.plan-section .plan-bg{
+    background: #f8f9fb;
+}
+.plan-section .plan-1{
+    background: #485460;
+    font-size: 2.6rem;
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.plan-section .plan-2{
+    background: #49cbcd;
+    font-size: 2.6rem;
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+    margin-top: 0; 
+}
+.plan-section h5{
+    background: #f8f9fb;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1.5rem 0;
+    border-bottom: .3rem solid #ecf0f1;
+}
+.plan-section h6{
+    font-size: 1.6rem;
+    color: #8c9299;
+    background: #fff;
+    padding: 1.7rem 0;
+    font-weight: 300;
+    border-bottom: .3rem solid #ecf0f1;
+}
+.plan-section .btn-plan{
+    background: #788492;
+    padding: 1rem 3rem;
+    border-radius: .3rem;
+    margin: 2.5rem 0;
+}
+.plan-section .btn-plan_2{
+    background: #49cbcd;
+    padding: 1rem 3rem;
+    border-radius: .3rem;
+    margin: 2.5rem 0;
+}
+/* ============== */
+/* testimonial Section*/
+/* =============== */
+.testimonial{
+    text-align: center;
+    padding: 10rem 0;
+
+}
+.testimonial h2{
+    color: #4e525d;
+    font-size: 4.2rem;
+}
+.testimonial .little-description{
+    color: #4e525d;
+    flex: 1.9rem;
+    margin-bottom: 3.5rem;
+}
+.testimonial .role{
+    font-size: 2.2rem;
+}
+/* ============== */
+/* Contact Section*/
+/* =============== */
+.contact{
+    background:url(img/contect-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 60rem;
+}
+.contact h3{
+    color: #fff;
+    font-size: 2.4rem;
+}
+.contact .little-description{
+    margin-left: 0;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.social-link{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.social-link ul li{
+    display: inline-block;
+    margin:0 .5rem;
+}
+.social-link a{
+    color: #fff;
+    cursor: pointer;
+}
+.social-link .fb i::before{
+    background: #3b5997;
+}
+.social-link .lin i::before{
+    background: #3ec2f3;
+}
+.social-link .go i::before{
+    background: #e44c41;
+}
+.social-link a i::before{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    transition: 2s;
+}
+.contact h6{
+    font-size: 1.4rem;
+    color: #eaeaea;
+    margin: .5rem 0;
+}
+
+/* ============*/
+/*contact form*/
+.contact-section form{
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #fff;
+    border: .1rem solid #fff;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
+}
+.contact-section form ::placeholder{
+    color: #c1c1c1;
+    opacity: 1;
+}
+.contact-section textarea{
+    height: 20rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.btn-submit{
+    float: right;
+    font-size: 2.2rem;
+    background: #30bae7;
+    padding: 1rem 5rem;
+    border-radius: .3rem;
+    border: 0;
+    margin-top: 1.5rem;
+
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
